@@ -19,6 +19,12 @@ namespace StarterAssets
 		[Header("Mouse Cursor Settings")]
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
+#if UNITY_WEBGL || UNITY_EDITOR
+		private void OnEnable()
+        {
+            SetCursorState(cursorLocked);
+        }
+#endif
 
 #if ENABLE_INPUT_SYSTEM
 		public void OnMove(InputValue value)
