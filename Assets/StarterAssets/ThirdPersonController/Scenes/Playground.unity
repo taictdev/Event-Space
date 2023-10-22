@@ -5466,6 +5466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameMonetize
       objectReference: {fileID: 0}
+    - target: {fileID: 1134998061469316, guid: b572dc27eea99ba4ca6d62b447cb6d4f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4987651733047190, guid: b572dc27eea99ba4ca6d62b447cb6d4f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10470,7 +10474,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1422339989
 MonoBehaviour:
   m_ObjectHideFlags: 0
