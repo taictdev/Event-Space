@@ -1,4 +1,7 @@
 using UnityEngine;
+using System;
+using System.Collections.Generic;
+using System.Collections;
 
 public class GameMonetizeManager : MonoBehaviour
 {
@@ -10,9 +13,15 @@ public class GameMonetizeManager : MonoBehaviour
 
     private void Start()
     {
-        ShowAd();
+        StartCoroutine(ShowAds());
     }
 
+    private IEnumerator ShowAds()
+    {
+        yield return new WaitForSeconds(15);
+        ShowAd();
+        StartCoroutine(ShowAds());
+    }
 
     private void OnDestroy()
     {
